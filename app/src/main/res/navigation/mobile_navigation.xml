@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.abort.traveler.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.abort.traveler.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.abort.traveler.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.abort.traveler.ui.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_slideshow"/>
+
+    <fragment
+        android:id="@+id/nav_place"
+        android:name="com.abort.traveler.ui.places.PlacesFragment"
+        android:label="@string/menu_places"
+        tools:layout="@layout/fragment_slideshow"/>
+
+    <fragment
+        android:id="@+id/nav_placeDetails"
+        android:name="com.abort.traveler.ui.placeDetails.PlaceDetailsFragment"
+        android:label="@string/menu_placesDetails"
+        tools:layout="@layout/fragment_slideshow"/>
+    <fragment
+        android:id="@+id/nav_summary"
+        android:name="com.abort.traveler.ui.summary.SummaryFragment"
+        android:label="@string/menu_sumary"
+        tools:layout="@layout/fragment_slideshow"/>
+    <fragment
+        android:id="@+id/nav_booking"
+        android:name="com.abort.traveler.ui.booking.BookingFragment"
+        android:label="@string/menu_Booking"
+        tools:layout="@layout/fragment_slideshow"/>
+</navigation>
